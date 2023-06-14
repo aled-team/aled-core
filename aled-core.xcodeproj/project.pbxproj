@@ -11,6 +11,8 @@
 		0568E0032A39F3BC0014BADA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0568E0022A39F3BC0014BADA /* ContentView.swift */; };
 		0568E0052A39F3BE0014BADA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0568E0042A39F3BE0014BADA /* Assets.xcassets */; };
 		0568E0082A39F3BE0014BADA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0568E0072A39F3BE0014BADA /* Preview Assets.xcassets */; };
+		23985F712A3A013700BFA3D4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23985F702A3A013700BFA3D4 /* GoogleService-Info.plist */; };
+		23985F742A3A020100BFA3D4 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 23985F732A3A020100BFA3D4 /* FirebaseAnalytics */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,7 @@
 		0568E0022A39F3BC0014BADA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0568E0042A39F3BE0014BADA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0568E0072A39F3BE0014BADA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		23985F702A3A013700BFA3D4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23985F742A3A020100BFA3D4 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +55,7 @@
 		0568DFFF2A39F3BC0014BADA /* aled-core */ = {
 			isa = PBXGroup;
 			children = (
+				23985F702A3A013700BFA3D4 /* GoogleService-Info.plist */,
 				0568E0002A39F3BC0014BADA /* aled_coreApp.swift */,
 				0568E0022A39F3BC0014BADA /* ContentView.swift */,
 				0568E0042A39F3BE0014BADA /* Assets.xcassets */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = "aled-core";
+			packageProductDependencies = (
+				23985F732A3A020100BFA3D4 /* FirebaseAnalytics */,
+			);
 			productName = "aled-core";
 			productReference = 0568DFFD2A39F3BC0014BADA /* aled-core.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 0568DFF42A39F3BC0014BADA;
+			packageReferences = (
+				23985F722A3A020100BFA3D4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 0568DFFE2A39F3BC0014BADA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +138,7 @@
 			files = (
 				0568E0082A39F3BE0014BADA /* Preview Assets.xcassets in Resources */,
 				0568E0052A39F3BE0014BADA /* Assets.xcassets in Resources */,
+				23985F712A3A013700BFA3D4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +356,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		23985F722A3A020100BFA3D4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		23985F732A3A020100BFA3D4 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 23985F722A3A020100BFA3D4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0568DFF52A39F3BC0014BADA /* Project object */;
 }
