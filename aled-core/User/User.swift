@@ -11,6 +11,7 @@ struct User: Identifiable {
     var id = UUID()
     let firstname: String
     let lastname: String
+    let pseudo: String
     let picture: String
     let rateNote: Double
     let rateNumber: Int
